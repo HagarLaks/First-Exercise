@@ -1,0 +1,23 @@
+.site 
+{font-family: 'Anton', sans-serif;
+
+    display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-areas: "Hagar Hagar"
+                    "movie place"
+                    "food place"
+                    "school school";
+grid-gap:10px; margin:20px; padding:10px; border:solid 2px #000;  
+                
+                }
+.site > *{padding:10px; color:#fff; }
+
+.name {background:#b46ae3; grid-area: Hagar; }
+.movie {background:#51a7fa; grid-area:movie;}
+.place {
+                  background:#70bf40; grid-area:place;
+                  }
+
+.food {background:#2e3cba; grid-area: food;}
+.schools {background:#ba2e3e; grid-area: school;}
+.inside{display: grid;}
