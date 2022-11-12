@@ -11,6 +11,9 @@
                         "footer footer footer footer";
     grid-gap: 0.2rem;
     text-align: center;
+    font-family: 'Marhey', cursive;
+    font-size:large;
+
 }
 
 a {
@@ -36,7 +39,12 @@ a:active {
 /* img {
     float: right;
 } */
+input {
 
+    border-radius: 5px;
+    border-color: darkslateblue;
+    
+}
 nav {
     background: #fbf8cc;
     grid-gap: 0;
@@ -51,25 +59,116 @@ nav {
     
 }
 
+form {
+    grid-area: form;
     
+    display: grid;
+    /* height: 100vh; */
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows:  2fr 2fr 2fr 2fr;
+    text-align: left;
+    align-items: center;
 
+    
+}
+.button {
+        background-color: #874caf; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        width: 50%;
+        height: fit-content;
 
+      }   
+    
+    
+  
+ .form_txt {
+    grid-area: top;
 
+ }
+
+ .details {
+    grid-area: details;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+.feedbacks {
+    grid-area: feedbacks;
+}
+
+.buttns {
+    grid-area: buttons;
+}
+
+.toscroll{
+    display: block;
+    overflow: scroll;
+    height: 80vh;
+}
+.hide {
+    display: none;
+    
+  }
+      
+  .myDIV:hover + .inside >.hide {
+    
+    display: block;
+   float: center;
+   z-index: 50;
+
+   
+  }
+  
 
 main {
     background: #ffcfd2;
     grid-area: main;
     height: 100%; 
     overflow: scroll;
-    
+    display: grid;
+    /* grid-template-columns: repeat(5 1fr);
+    grid-template-rows: repeat(4 5fr);
+    grid-template-areas: "name name name name name"
+                          "movie movie movie movie movie "
+                          "place place place place place"
+                          "form form form form form";
 
+     */
+     z-index: 0;
 }
+.movie {
+    grid-area: movie;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    
+    
+}
+.place > .inside {
+    grid-area: place;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    
+    
+}
+.inside img {
+width: 80%;
+}
+.name {
+    grid-area: name;
+}
+
 
 #sidebar {
     background: #cfbaf0;
     grid-area: sidebar;
     
-    
+   
 }
  
 #sidelist {
@@ -92,10 +191,6 @@ main {
     padding-inline-start: 0px;
 }
 
-
-
-
-
 #nav1 {
     background-color: #cfbaf0;
     grid-area: nav1;
@@ -104,7 +199,6 @@ main {
     background-color: #f1c0e8;
     grid-area: nav2;
 }
-
 #nav3 {
     background-color: #cfbaf0;
     grid-area: nav3;
@@ -113,7 +207,6 @@ main {
     background-color: #f1c0e8;
     grid-area: nav4;
 }
-
 #nav5 {
     background-color: #cfbaf0;
     grid-area: nav5;}
@@ -129,21 +222,6 @@ ul {list-style: none;
     text-align: center;
     }
 
-/* #content1 {
-    background: #a3c4f3;
-    grid-area: content1;
-
-}
-#content2 {
-    background: #90dbf4;
-    grid-area: content2;
-
-}
-#content3 {
-    background: #98f5e1;
-    grid-area: content3;
-
-} */
 
 footer {
     background: #b9fbc0;
@@ -164,15 +242,14 @@ footer {
 @media only screen and (max-width:550px) {
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
         grid-template-areas: 
         "nav"
         "sidebar"
         "main"
-        /* "content1"
-        "content2"
-        "content3" */
-        "footer";
+        "footer"
+        "form";
+        align-items: center;
     }
     main{
         height: auto; 
@@ -180,14 +257,3 @@ footer {
     }
 
 }
-    /* #sidelist {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1 fr;
-        grid-template-areas: 
-        "nav1"
-        "nav2"
-        "nav3"
-        "nav4"
-        "nav5"
-        "nav6"
-        "empty";} */

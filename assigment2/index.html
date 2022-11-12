@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hagar</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -13,71 +14,94 @@
             
             <nav>
                 <div><a href="#"><img src="images/favicon-32x32.png"     ></a></div>
-                <h1>Hagar's Website</h1>
+                    <h1>Hagar's Website</h1>
                 <div></div><div></div><div></div><div></div><div></div><div><img src="images/user2.jpg" width="32" height="32"></div>
             </nav>
         
             <main>
                 <div class="site">
                     <div id="name"> 
-                        <div class="inside">
+                        <div>
                             <h1>Hagar Laks</h1>
                             <p>Welcome to my website</p>
-                            <img src=images/Multi_Gender_Hebrew_Welcome_b-w_full-nikud.jpg width="300px">
+                            <img class="myDIV" src=images/Multi_Gender_Hebrew_Welcome_b-w_full-nikud.jpg width="300px">
                         </div>
                     </div>
-                <div class="movie">
-                    <div class="inside">
+                    <div class="movie">
+                        <div class="inside">
                         
-                        <a id="Favourite movie"><h2>My favourite movie these days:</h2></a>
-                        <h2>Encanto</h2>
-                        <a href="https://www.imdb.com/title/tt2953050/"
-                            target="_blank">Encanto on IMDB</a>
-                        <p> Encanto is a very inspiring movie. It seems like a kids movie but 
-                            it is an amazing movie for adults.
-                            The main charachter is Mirable, a Colombian teenage girl has to face the frustration of being the only member of her family without magical powers. You'll meet her family members, find out their special powers and I am sure you will find at least one charachter to identify with. </p>
-                    
-                        <img src="images/Encanto.png" width="300">
-                        <p> This is Luisa, Mirable's sister. Her power is strenght. She lifts, carries, and never breaks.</p>
-                        <p> Quoting her: "Why Would Anything Be Wrong? I'm Totally Fine. The Magic's Fine. Luisa's Fine. I'm Totally Not Nervous."</p>
+                            <a id="Favourite movie"><h2>My favourite movie these days:</h2></a>
+                            <h2>Encanto</h2>
+                            <a href="https://www.imdb.com/title/tt2953050/"
+                                    target="_blank">Encanto on IMDB</a>
+                            <p> Encanto is a very inspiring movie. It seems like a kids movie but 
+                                    it is an amazing movie for adults.
+                                    The main charachter is Mirable, a Colombian teenage girl has to face the frustration of being the only member of her family without magical powers. You'll meet her family members, find out their special powers and I am sure you will find at least one charachter to identify with. </p>
+                            <p> This is Luisa, Mirable's sister. Her power is strenght. She lifts, carries, and never breaks.</p>
+                            <p> Quoting her: "Why Would Anything Be Wrong? I'm Totally Fine. The Magic's Fine. Luisa's Fine. I'm Totally Not Nervous."</p>
                     </div>
+                    <div class="toscroll"><img class="myDIV" src="images/Encanto.png" width="300">
+                        <div class="hide"><img src="images/Encanto.png"></div><img class="myDIV" src="images/Encanto.png" width="300">
+                        <div class="hide"><img src="images/Encanto.png"></div><img class="myDIV" src="images/Encanto.png" width="300">
+                        <div class="hide"><img src="images/Encanto.png"></div></div>
                 </div>
                 <div class = "place">
                     <div class="inside">
-                        
+                        <div>
                         <a id="Favourite place"></a>
                         <h2> A place I like</h2>
-                        <img src="images/20220729_080435.jpg" width="300">
+                        
                         <h3> The beach</h3>
-                        <p> One of the most beautiful beaches in Israel is Achziv (in the photo above)<p>
+                        <p> One of the most beautiful beaches in Israel is Achziv (in the top photo)<p>
                         <a href ="https://goo.gl/maps/3HnUsGsnqjPzxh5o9"
                             target="_blank">Achziv Beach location</a>
+
+                           
+                        </div>
+                        <div class="toscroll">
+                            <img class="myDIV" src="images/20220729_080435.jpg" width="300">
+                            <img class="myDIV" src="images/20220808_162900.jpg" width="300">
+                            <img class="myDIV" src="images/20221001_102242.jpg" width="300">
+                                    <div class="hide"><img src="images/20220729_080435.jpg"></div>
+            
                     </div>
-                </div>
+                    </div>
+                            
+                    </div>
                 
-                
-                
-                 <form  method="get">
-                    <a id="Feedback"></a><h2>Feedback Form</h2>
-                    <p>I would like to read your opinon </p>
-                    <div>
-                        <p>Personal Details</p>
+                 <form class="form" method="get">
+                    <div><a class="form_txt" id="Feedback"></a><h2>Feedback Form</h2>
+                    <p class="form_txt">I would like to read your opinon </p>
+                    </div>
+                    <div></div>
+                    <div><p >Personal Details</p>
+                        
                         <label>Full Name:
-                            <input type="text" name="name">
+                            <input type="text" name="name" required>
                         </label>
-                        <label>Email:
-                            <input type="email" name="email">
-                        </label>
+                        <br>
                         <label>Phone Number:
                             <input type="number" name="phone">
                         </label>
-                        <label>Date of birth:
-                            <input type="date" name="date_of_birth" value="2000-01-01"
-                            min="1900-01-01" max="2050-01-01"> >
-                        </label>
                     </div>
                     <div>
-                        <p>Your Feedback</p>
+                        <br>
+                        <br>
+
+                        <label>Email:
+                            <input type="email" name="email" required>
+                        </label>
+                        <br>
+
+                        <label>Date of birth:
+                            <input type="date" name="date_of_birth" value="2000-01-01"
+                            min="1900-01-01" max="2050-01-01"> 
+                        </label>
+                    </div>
+
+                   
+                    <div>
+                        <p >Your Feedback</p><div></div>
                         <label>Rating:
                             <input type="radio" id="1" name="rating" value="1">
                             <label for="1">1</label>
@@ -90,22 +114,28 @@
                             <input type="radio" id="5" name="rating" value="5">
                             <label for="5">5</label>
                         </label>
-
-                        <!-- <label>How did you find this website:
-                            <input type="email" name="email">
-                        </label>
-                        <label>Phone Number:
-                            <input type="number" name="phone">
-                        </label>
-                        <label>Date of birth:
-                            <input type="date" name="date_of_birth" value="2000-01-01"
-                            min="1900-01-01" max="2050-01-01"> >
-                        </label> -->
                     </div>
+                    <div>
+                        <br>
+                        <br>
+                        <label for="how">How did you find this website?
+                            <select name="options" id="opt" required>
+                                <option value="Github">Github</option>
+                                <option value="LinkdIn">LinkdIn</option>
+                                <option value="Webdev">Webdev</option>
+                                <option value="Google">Google</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </label>
+                        </div>
+                        
+                   
+                      
                     
+                    <div><input class="button" type="submit" ></div>
                     
-                    <input type="text" name="house">
-                    <input type="submit">
+                    <div><input type="reset" class="button"></div>
+                
                 </form>
             </main>
         <div id ="sidebar">
