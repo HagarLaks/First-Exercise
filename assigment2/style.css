@@ -59,6 +59,25 @@ nav {
     
 }
 
+
+
+figcaption.popup {
+    position: absolute;
+    background-color: aqua;
+    box-shadow: 2px 4px 15px 4px green;
+    top:10%;
+    left: 10%;
+    visibility: hidden;
+}
+
+figure.thumbnail:hover
+figcaption.popup{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    visibility: visible;
+}
+
 form {
     grid-area: form;
     
